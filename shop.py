@@ -53,11 +53,11 @@ def is_valid_order(order):
     Check if an order exists in the shop.
     """
     # your code goes here!
-    if order in menu:
+    if order.lower() in menu:
         return True
-    elif order in original_flavors:
+    elif order.lower() in original_flavors:
         return True
-    elif order in signature_flavors:
+    elif order.lower() in signature_flavors:
         return True
     else:
         return False
